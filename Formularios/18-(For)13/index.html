@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador del 1 a 5(for)</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      body{
+        background-image: url(img/bg-signup.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-10 row formulario">
+            <div class="col-8 forma">
+                <form class="row g-5 needs-validation" method="#" actionovalidate onsubmit="return contador()">
+                    <div class="items">
+                      <label for="txtNumeroUno" class="form-label"><div class="letra">CONTADOR</div></label>
+                      <input type="number" class="form-control" id="txtNumeroUno" value="" value="" min="0" step="1" placeholder="Ingrese un numero" required>
+                    </div>
+                      <div class="boton">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                      </div>
+                  </form>
+            </div>
+            <div class="col-4 respuesta">
+              <div class="col-12">
+                  <h3>RESPUESTA</h3>
+              </div>
+              <div id="contadores"></div>
+          </div>
+        </div>
+    </div> 
+    <script src="js/contador.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="bootstrap/js/boote.js"></script>
+</body>
+</html>
